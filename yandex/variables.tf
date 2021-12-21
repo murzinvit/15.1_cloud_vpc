@@ -3,7 +3,7 @@ variable "nat_image" {
 }
 
 variable "vm_name" {
-  default = "nat-1"
+  default = "nat"
 }
 
 variable "internal_nat_ip" {
@@ -23,12 +23,13 @@ variable "cloud_id" {
 }
 
 variable "folder_id" {
-  default = "b1g3k25am6h6fb9b04uo"
+  default = ""
 }
 
 variable "zone" {
   default = "ru-central1-a"
 }
+
 variable "vm2_name" {
   default = "station-1"
 }
