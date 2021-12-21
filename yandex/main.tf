@@ -60,10 +60,26 @@ resource "yandex_vpc_network" "network-1" {
 }
 
 resource "yandex_vpc_subnet" "subnet-1" {
-  name           = var.subnet_name
+  name           = var.subnet-1-name
   zone           = "ru-central1-a"
   network_id     = yandex_vpc_network.network-1.id
   v4_cidr_blocks = ["192.168.10.0/24"]
+}
+
+resource "yandex_vpc_subnet" "subnet-2" {
+  name           = var.subnet-2-name
+  zone           = "ru-central1-a"
+  network_id     = yandex_vpc_network.network-1.id
+  v4_cidr_blocks = ["192.168.20.0/24"]
+}
+
+resource "yandex_vpc_route_table" "network-1-rt" {
+  network_id = yandex_vpc_network.network-1.id
+
+  static_route {
+    destination_prefix = "192.168.20.0/24"
+    next_hop_address   = "192.168.10.254"
+  }
 }
 
 output "internal_ip_address_vm_1" {

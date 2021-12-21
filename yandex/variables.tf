@@ -10,8 +10,12 @@ variable "internal_nat_ip" {
   default = "192.168.10.254"
 }
 
-variable "subnet_name" {
+variable "subnet-1-name" {
   default = "public"
+}
+
+variable "subnet-2-name" {
+  default = "private"
 }
 
 variable "token" {
@@ -23,7 +27,7 @@ variable "cloud_id" {
 }
 
 variable "folder_id" {
-  default = ""
+  default = "b1g3k25am6h6fb9b04uo"
 }
 
 variable "zone" {
