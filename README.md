@@ -22,6 +22,13 @@ Resource terraform для ЯО
 - [VPC subnet](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/vpc_subnet)
 - [Route table](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/vpc_route_table)
 - [Compute Instance](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/compute_instance)
+
+Манифесты terraform: 
+Рультат выполнения манифеста: [yandex_cloud.tf](https://github.com/murzinvit/15.1_cloud_vpc/tree/main/yandex)
+![](https://github.com/murzinvit/screen_1/blob/a853800a002279922408bf846a6204d642e72902/YC_result_in_console_terra.jpg)
+Подключение с хоста в сети public, к хосту в сети privat(через scp скопировал id_rsa.pub в .ssh на хост в public сети):
+![](https://github.com/murzinvit/screen_1/blob/955a7c698f321866c4ef4139a7c3790cfe0b0ae5/YC_connection_inside_net.jpg)
+
 ---
 ## Вариант с  AWS. (Дополнительная часть)
 
