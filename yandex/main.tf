@@ -55,6 +55,33 @@ resource "yandex_compute_instance" "vm-2" {
   }
 }
 
+
+resource "yandex_compute_instance" "vm-3" {
+  name = var.vm3_name
+
+  resources {
+    cores  = 2
+    memory = 2
+  }
+
+  boot_disk {
+    initialize_params {
+      image_id = var.vm3_image
+    }
+  }
+
+  network_interface {
+    subnet_id  = yandex_vpc_subnet.subnet-2.id
+    nat        = true
+    ip_address = var.vm3_ip
+  }
+
+  metadata = {
+    user-data = "${file("meta.txt")}"
+  }
+}
+
+
 resource "yandex_vpc_network" "network-1" {
   name = "network-1"
 }
@@ -71,13 +98,14 @@ resource "yandex_vpc_subnet" "subnet-2" {
   zone           = "ru-central1-a"
   network_id     = yandex_vpc_network.network-1.id
   v4_cidr_blocks = ["192.168.20.0/24"]
+  route_table_id = yandex_vpc_route_table.network-1-rt.id
 }
 
 resource "yandex_vpc_route_table" "network-1-rt" {
   network_id = yandex_vpc_network.network-1.id
 
   static_route {
-    destination_prefix = "192.168.20.0/24"
+    destination_prefix = "0.0.0.0/0"
     next_hop_address   = "192.168.10.254"
   }
 }
@@ -96,6 +124,14 @@ output "internal_ip_address_vm_2" {
 
 output "external_ip_address_vm_2" {
   value = yandex_compute_instance.vm-2.network_interface.0.nat_ip_address
+}
+
+output "internal_ip_address_vm_3" {
+  value = yandex_compute_instance.vm-3.network_interface.0.ip_address
+}
+
+output "external_ip_address_vm_3" {
+  value = yandex_compute_instance.vm-3.network_interface.0.nat_ip_address
 }
 
 

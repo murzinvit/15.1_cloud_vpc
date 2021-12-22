@@ -27,7 +27,7 @@ variable "cloud_id" {
 }
 
 variable "folder_id" {
-  default = "b1g3k25am6h6fb9b04uo"
+  default = ""
 }
 
 variable "zone" {
@@ -43,5 +43,17 @@ variable "vm2_ip" {
 }
 
 variable "vm2_image" {
+  default = "fd80mrhj8fl2oe87o4e1"
+}
+
+variable "vm3_name" {
+  default = "station-2"
+}
+
+variable "vm3_ip" {
+  default = "192.168.20.20"
+}
+
+variable "vm3_image" {
   default = "fd80mrhj8fl2oe87o4e1"
 }
