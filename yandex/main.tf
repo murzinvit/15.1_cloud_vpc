@@ -72,7 +72,6 @@ resource "yandex_compute_instance" "vm-3" {
 
   network_interface {
     subnet_id  = yandex_vpc_subnet.subnet-2.id
-    nat        = true
     ip_address = var.vm3_ip
   }
 
