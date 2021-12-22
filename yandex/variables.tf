@@ -57,3 +57,4 @@ variable "vm3_ip" {
 variable "vm3_image" {
   default = "fd80mrhj8fl2oe87o4e1"
 }
+
