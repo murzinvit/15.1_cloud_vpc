@@ -97,10 +97,10 @@ resource "yandex_vpc_subnet" "subnet-2" {
   zone           = "ru-central1-a"
   network_id     = yandex_vpc_network.network-1.id
   v4_cidr_blocks = ["192.168.20.0/24"]
-  route_table_id = yandex_vpc_route_table.network-1-rt.id
+  route_table_id = yandex_vpc_route_table.subnet-2-rt.id
 }
 
-resource "yandex_vpc_route_table" "network-1-rt" {
+resource "yandex_vpc_route_table" "subnet-2-rt" {
   network_id = yandex_vpc_network.network-1.id
 
   static_route {
@@ -127,10 +127,6 @@ output "external_ip_address_vm_2" {
 
 output "internal_ip_address_vm_3" {
   value = yandex_compute_instance.vm-3.network_interface.0.ip_address
-}
-
-output "external_ip_address_vm_3" {
-  value = yandex_compute_instance.vm-3.network_interface.0.nat_ip_address
 }
 
 
