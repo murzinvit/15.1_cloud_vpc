@@ -55,4 +55,4 @@ Install terraform: https://learn.hashicorp.com/tutorials/terraform/install-cli <
 yc install: https://cloud.yandex.ru/docs/cli/operations/install-cli </br>
 yc resources: https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs </br>
 Resourses FAQ: https://cloud.yandex.ru/docs/cli/cli-ref/managed-services/compute/instance/ </br>
-
+Static routes: https://cloud.yandex.ru/docs/vpc/concepts/static-routes#internet-routes </br>
