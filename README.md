@@ -27,7 +27,7 @@ Resource terraform для ЯО
 Рультат выполнения манифеста: </br>
 ![](https://github.com/murzinvit/screen_1/blob/d182afba22863c57b642f7e1aca02900352592e1/YC_terraform_init_ok.jpg) </br>
 
-Подключение к хосту в сети public: </br>
+Подключение из внешнего мира к хосту в сети public: </br>
 ![](https://github.com/murzinvit/screen_1/blob/d182afba22863c57b642f7e1aca02900352592e1/YC_login_in_vm2_ok.jpg) </br>
 
 Подключение с хоста из сети public, к хосту в сети private(через scp скопировал туда id_rsa.pub и id_rsa в .ssh): </br>
