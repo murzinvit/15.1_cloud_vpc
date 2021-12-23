@@ -25,10 +25,16 @@ Resource terraform для ЯО
 
 Манифесты terraform: [yandex_cloud.tf](https://github.com/murzinvit/15.1_cloud_vpc/tree/main/yandex) </br>
 Рультат выполнения манифеста: </br>
-![](https://github.com/murzinvit/screen_1/blob/a853800a002279922408bf846a6204d642e72902/YC_result_in_console_terra.jpg) </br>
-Подключение с хоста в сети public, к хосту в сети privat(через scp скопировал id_rsa.pub в .ssh на хост в public сети): </br>
-![](https://github.com/murzinvit/screen_1/blob/955a7c698f321866c4ef4139a7c3790cfe0b0ae5/YC_connection_inside_net.jpg) </br>
+![](https://github.com/murzinvit/screen_1/blob/d182afba22863c57b642f7e1aca02900352592e1/YC_terraform_init_ok.jpg) </br>
+
+Подключение к хосту в сети public: </br>
+![](https://github.com/murzinvit/screen_1/blob/d182afba22863c57b642f7e1aca02900352592e1/YC_login_in_vm2_ok.jpg) </br>
+
+Подключение с хоста из сети public, к хосту в сети private(через scp скопировал туда id_rsa.pub и id_rsa в .ssh): </br>
+![](https://github.com/murzinvit/screen_1/blob/17e43f2b190007a6a3fd7a4d65d089ec75d6afd1/YC_login_in_vm3_ok.jpg) </br>
+
 Создал маршрут в сети private: [networks.tf](https://github.com/murzinvit/15.1_cloud_vpc/blob/main/yandex/networks.tf) </br>
+![](https://github.com/murzinvit/screen_1/blob/f2dd4ad07716b50b75c5c7c8709d1f61133aef84/YC_route_in_net_private.jpg) </br>
 
 
 ---
