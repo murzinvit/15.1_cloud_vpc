@@ -23,7 +23,7 @@ Resource terraform для ЯО
 - [Route table](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/vpc_route_table)
 - [Compute Instance](https://registry.terraform.io/providers/yandex-cloud/yandex/latest/docs/resources/compute_instance)
 
-Манифесты terraform: [yandex_cloud.tf](https://github.com/murzinvit/15.1_cloud_vpc/tree/main/yandex) </br>
+Манифесты terraform: [yandex_cloud](https://github.com/murzinvit/15.1_cloud_vpc/tree/main/yandex) </br>
 Рультат выполнения манифеста: </br>
 ![](https://github.com/murzinvit/screen_1/blob/d182afba22863c57b642f7e1aca02900352592e1/YC_terraform_init_ok.jpg) </br>
 
