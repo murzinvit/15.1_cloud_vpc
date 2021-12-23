@@ -1,4 +1,7 @@
-# instance
+##########
+# terraform
+##########
+
 resource "yandex_compute_instance" "vm-1" {
   name = var.vm_name
 
