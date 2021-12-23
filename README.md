@@ -33,7 +33,9 @@ Resource terraform для ЯО
 Подключение с хоста из сети public, к хосту в сети private(через scp скопировал туда id_rsa.pub и id_rsa в .ssh): </br>
 ![](https://github.com/murzinvit/screen_1/blob/17e43f2b190007a6a3fd7a4d65d089ec75d6afd1/YC_login_in_vm3_ok.jpg) </br>
 
-Создал маршрут и закрепил в сети private: [networks.tf](https://github.com/murzinvit/15.1_cloud_vpc/blob/main/yandex/networks.tf) </br>
+Создал маршрут и закрепил для сети private: </br>
+Манифест сети: [networks.tf](https://github.com/murzinvit/15.1_cloud_vpc/blob/main/yandex/networks.tf) </br>
+![](https://github.com/murzinvit/screen_1/blob/e66fe5197cf9fcd9ec28cc08a56e1ab85fdded5c/YC_static_route_private.jpg) </br>
 ![](https://github.com/murzinvit/screen_1/blob/f2dd4ad07716b50b75c5c7c8709d1f61133aef84/YC_route_in_net_private.jpg) </br>
 
 
