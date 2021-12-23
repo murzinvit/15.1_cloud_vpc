@@ -1,5 +1,5 @@
 ##########
-# terraform
+# instance
 ##########
 
 resource "yandex_compute_instance" "vm-1" {
