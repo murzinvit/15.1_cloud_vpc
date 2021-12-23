@@ -41,7 +41,7 @@ Resource terraform для ЯО
 Traceroute mail.ru, с хоста в сети private: </br>
 ![](https://github.com/murzinvit/screen_1/blob/b818440611936d4f34ceab0d6de61f86b6576b66/YC_traceroute_in_vm3.jpg) </br>
 
-После открепления статического маршрута от сети private, пинга mail.ru блокирван: </br>
+После открепления статического маршрута от сети private, пинг mail.ru блокирван: </br>
 ![](https://github.com/murzinvit/screen_1/blob/d23796a39e446b4696a962d24521cf760bf4fc9d/YC_after_delete_static_route.jpg) </br>
 
 
