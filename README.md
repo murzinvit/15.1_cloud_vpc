@@ -38,6 +38,9 @@ Resource terraform для ЯО
 ![](https://github.com/murzinvit/screen_1/blob/e66fe5197cf9fcd9ec28cc08a56e1ab85fdded5c/YC_static_route_private.jpg) </br>
 ![](https://github.com/murzinvit/screen_1/blob/f2dd4ad07716b50b75c5c7c8709d1f61133aef84/YC_route_in_net_private.jpg) </br>
 
+Traceroute mail.ru, с хоста в сети private: </br>
+![](https://github.com/murzinvit/screen_1/blob/b818440611936d4f34ceab0d6de61f86b6576b66/YC_traceroute_in_vm3.jpg) </br>
+
 
 ---
 ## Вариант с  AWS. (Дополнительная часть)
